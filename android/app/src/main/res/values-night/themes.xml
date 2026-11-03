@@ -1,0 +1,9 @@
+<resources>
+    <style name="Base.Keeply" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorAccent">@color/keeply_amber</item>
+        <item name="android:windowBackground">@color/keeply_bg</item>
+        <item name="android:statusBarColor">@color/keeply_bg</item>
+        <item name="android:navigationBarColor">@color/keeply_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

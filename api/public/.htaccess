@@ -1,0 +1,46 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle X-XSRF-Token Header
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Correct MIME types so the PWA manifest + icons are recognized by browsers and
+# by PWABuilder. Without this, .webmanifest is served with no Content-Type and
+# (because of nosniff) is treated as "no manifest found".
+<IfModule mod_mime.c>
+    AddType application/manifest+json .webmanifest
+    AddType application/json .json
+    AddType image/svg+xml .svg
+    # The Android app offered for download from /downloads/
+    AddType application/vnd.android.package-archive .apk
+</IfModule>
+
+# The main 4thepeople.live site's .htaccess (a folder above this one) switches the
+# microphone off and sets a strict Content-Security-Policy for every subdomain. Keeply
+# needs the microphone for voice notes, blob: audio/images for previews, and inline
+# styles for rich-text colours, so it sets its own. These run after the parent's
+# rules, so they replace them for Keeply only.
+<IfModule mod_headers.c>
+    Header always set Permissions-Policy "geolocation=(), microphone=(self), camera=(), interest-cohort=()"
+    Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; form-action 'self'; frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+</IfModule>

@@ -1,0 +1,1 @@
+Your notes, photos and recordings are now encrypted on your device with a 24-digit key only you have. Two-factor sign-in added. Voice transcription and summaries removed. Built for Android 17, kept out of backups, screenshots blocked by default.

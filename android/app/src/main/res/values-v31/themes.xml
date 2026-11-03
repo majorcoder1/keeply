@@ -1,0 +1,7 @@
+<resources>
+    <!-- Android 12+ launch screen: the app icon on the page colour, light or dark. -->
+    <style name="Theme.Keeply" parent="Base.Keeply">
+        <item name="android:windowSplashScreenBackground">@color/keeply_bg</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/ic_launcher_background</item>
+    </style>
+</resources>

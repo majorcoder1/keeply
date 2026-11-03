@@ -1,0 +1,6 @@
+<resources>
+    <!-- The web app's bg-warm colour (light) and its amber accent. -->
+    <color name="keeply_bg">#FFFFFCEB</color>
+    <color name="keeply_amber">#FFF5B400</color>
+    <color name="ic_launcher_background">#FFFFFCEB</color>
+</resources>

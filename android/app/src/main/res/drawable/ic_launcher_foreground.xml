@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Keeply bulb from web/public/icon.svg, sized into the adaptive-icon safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <group android:scaleX="0.14" android:scaleY="0.14" android:translateX="18.16" android:translateY="14.94">
+        <path android:pathData="M256,96c-79,0 -143,62 -143,139 0,47 24,83 52,112 16,16 27,30 31,49h120c4,-19 15,-33 31,-49 28,-29 52,-65 52,-112 0,-77 -64,-139 -143,-139z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear"
+                    android:startX="256" android:startY="96" android:endX="256" android:endY="396">
+                    <item android:offset="0" android:color="#FFFFD54A" />
+                    <item android:offset="1" android:color="#FFF5B400" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:pathData="M212,250l30,30 28,-44 30,34" android:strokeColor="#FFFFFCEB" android:strokeWidth="16"
+            android:strokeLineCap="round" android:strokeLineJoin="round" />
+        <path android:pathData="M209,404h94a13,13 0,0 1,0 26h-94a13,13 0,0 1,0 -26z" android:fillColor="#FFC98F00" />
+        <path android:pathData="M220,438h72a12,12 0,0 1,0 24h-72a12,12 0,0 1,0 -24z" android:fillColor="#FFC98F00" />
+    </group>
+</vector>

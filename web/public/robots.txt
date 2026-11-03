@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keeply.4thepeople.live/sitemap.xml

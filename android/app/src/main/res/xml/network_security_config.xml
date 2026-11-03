@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Keeply only ever talks to its own site over HTTPS. This refuses plain HTTP outright
+     (the replacement for the deprecated usesCleartextTraffic attribute). -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

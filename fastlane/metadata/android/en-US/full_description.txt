@@ -1,0 +1,12 @@
+Keeply is a simple notes app that keeps everything in one place and in sync, and locks it on your own device so only you can read it.
+
+- Write notes and organize them in folders and labels
+- Record voice notes and play them back any time
+- Attach photos to your notes
+- Everything is encrypted on your phone before it is synced, with a key only you have
+- Two-factor sign-in with an authenticator app
+- Sign in on any device and your notes follow you
+
+Keeply is free, has no ads and no trackers. Your notes belong to you, and you can ask for your account and data to be deleted at any time. The source code is public, including the server.
+
+Keeply needs the Keeply server (keeply.4thepeople.live) to sign in and sync.

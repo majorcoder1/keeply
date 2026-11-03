@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Keeply</string>
+
+    <string name="offline_title">You\'re offline</string>
+    <string name="offline_body">Keeply needs the internet the first time it opens. Check your connection and try again.</string>
+    <string name="offline_retry">Try again</string>
+
+    <string name="mic_off">The microphone is turned off for Keeply. Turn it on in Settings, Apps, Keeply, Permissions.</string>
+    <string name="add_photo">Add a photo</string>
+    <string name="no_app">No app on this phone can open that link.</string>
+
+    <string name="channel_recording">Recording</string>
+    <string name="channel_recording_desc">Shown while Keeply is recording a voice note</string>
+    <string name="recording_title">Recording a voice note</string>
+    <string name="recording_text">Keeps going with the screen off. Tap to return to Keeply.</string>
+    <string name="recording_stop">Stop</string>
+</resources>

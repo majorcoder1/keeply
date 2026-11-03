@@ -1,0 +1,1 @@
+Checklists, plus working settings: add new items to the bottom, move checked items to the bottom, rich link previews (off by default) and sharing. Android 1.2.2 adds the share sheet.

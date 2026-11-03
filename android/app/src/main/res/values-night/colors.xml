@@ -1,0 +1,4 @@
+<resources>
+    <!-- The web app's dark bg-warm colour. -->
+    <color name="keeply_bg">#FF16140F</color>
+</resources>

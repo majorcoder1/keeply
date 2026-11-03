@@ -1,0 +1,11 @@
+# Keeply is only meant to be reached at keeply.4thepeople.live (document root:
+# api/public). This folder also sits inside the main 4thepeople.live site, so without
+# this file its code, settings and error logs could be opened at
+# 4thepeople.live/Keeply/... Refuse any request here that doesn't come in on the
+# keeply. address. It checks the address rather than using "Require all denied",
+# so it can never block the Keeply site itself.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} !^keeply\. [NC]
+  RewriteRule ^ - [F]
+</IfModule>

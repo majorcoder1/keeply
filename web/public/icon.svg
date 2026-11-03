@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bulb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd54a"/>
+      <stop offset="1" stop-color="#f5b400"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#fffceb"/>
+  <!-- lightbulb glass -->
+  <path fill="url(#bulb)" d="M256 96c-79 0-143 62-143 139 0 47 24 83 52 112 16 16 27 30 31 49h120c4-19 15-33 31-49 28-29 52-65 52-112 0-77-64-139-143-139z"/>
+  <!-- filament -->
+  <path fill="none" stroke="#fffceb" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M212 250l30 30 28-44 30 34"/>
+  <!-- base rings -->
+  <rect x="196" y="404" width="120" height="26" rx="13" fill="#c98f00"/>
+  <rect x="208" y="438" width="96" height="24" rx="12" fill="#c98f00"/>
+</svg>
